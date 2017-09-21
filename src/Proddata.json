@@ -1,0 +1,1 @@
+{ "_id" : "5579b62cdb678e641a1c0299", "name" : "Professional AngularJS", "internal" : { "approximatePriceUSD" : 32 }, "category" : { "_id" : "Web Programming", "parent" : "Non-Fiction", "ancestors" : [ "Books", "Non-Fiction", "Web Programming" ] }, "price" : { "amount" : 32, "currency" : "USD" }, "pictures" : [ "http://i.imgur.com/1ltldCT.png" ], "__v" : 0 }
