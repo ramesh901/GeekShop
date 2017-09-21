@@ -8,16 +8,39 @@ var Prod = require('./Proddata.json')
 class Retail extends Component {
  render() {
   return (
- <div >
-  <h1>{Prod.name}</h1>
-  <h1>{Prod.internal.approximatePriceUSD}</h1>
-  <img src={Prod.pictures} height="120" alt="Prod logo"></img>
+  <div className="product-details">
+    <div className="crumbs">
+      <div className="crumb" >
+        <a >
+          {Prod.category.ancestor}
+        </a>
+        <div className="divider" >
+          /
+        </div>
+      </div>
+    </div>
+    <div className="product-details-content">
+      <div className="image-left">
+        <img src={Prod.pictures} alt="pro"/>
+      </div>
+      <div className="details-right">
+        <h1>{Prod.name}</h1>
+        <div>{Prod.displayPrice}</div>
+        <div className="cart-button" >
+          <i className="fa fa-cart-plus"></i>
+          Add
+        </div>
+      </div>
+      <div ></div>
+    </div>
+  </div>
+
   
   
 
  
  
- </div>
+ 
  )
  }
 }
